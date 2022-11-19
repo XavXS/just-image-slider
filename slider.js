@@ -74,14 +74,14 @@ class slider {
 
         // update frame based on element index and corresponding path
         let frame = this.#element.querySelector('.frame');
-        frame.setAttribute('src', this.#paths[[].indexOf.call(slides, slide)]);
+        frame.style.backgroundImage = this.#paths[[].indexOf.call(slides, slide)];
     }
 
     #createUI() {
         let slider = document.createElement('div');
         slider.classList.add('slider');
     
-        let frame = document.createElement('img');
+        let frame = document.createElement('div');
         frame.classList.add('frame');
     
         let slides = document.createElement('div');

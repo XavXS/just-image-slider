@@ -49,6 +49,8 @@ body {
     width: 400px;
     height: 320px;
     border-radius: 4px;
+    transition: 0.3s ease-in-out;
+    background-size: 100% 100%;
 }
 
 .slides {
